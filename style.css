@@ -1,0 +1,262 @@
+
+.div1>p{
+    color: brown;
+    text-align: center;
+    font-size: 30px ;
+}
+.box{
+    width: 200px;
+    height: 200px;
+    background-color: black;
+    margin: auto;
+    position: relative;
+}
+.sub-box{
+    width: 100px;
+    height: 100px;
+    background-color: yellow;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 100%;
+}
+.sub-box:hover{
+    cursor: pointer;
+    transition: 2s;
+    box-shadow: 0 0 60px white;
+}
+table, th, td{
+    border: 1px solid black;
+    border-collapse: collapse;
+    text-align: center;
+    padding: 10px;
+    margin: auto;
+}
+table tbody> tr:nth-child(3){
+    background-color: lightgrey;
+}
+a{
+    background-color: red;
+}
+.hello:target{
+    color: yellow;
+    background-color: #000000;
+}
+.div3>p{
+    border: 1px solid black;
+    width: 200px;
+    margin: auto;
+    padding: 2px 5px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    height: 30px;
+}
+.div3>.p3:hover{
+    width: 700px;
+    transition: 2s;
+    transition-timing-function: 4s;
+    height: 100px;
+    white-space: normal;
+}
+h1{
+    width: 400px;
+    margin: auto;
+    border: 2px solid black;
+    word-break: break-all;
+}   
+@font-face {
+    font-family: Myfonts;
+    src: url(fonts/BitcountGridDouble-VariableFont_CRSV\,ELSH\,ELXP\,slnt\,wght.ttf);
+}
+.h2{
+    font-family: Myfonts;
+    font-size: 40px;
+    text-align: center;
+}
+@font-face {
+    font-family: Chinese;
+    src: url(fonts/NotoSansSC-VariableFont_wght.ttf);
+}
+.div4{
+    font-family: Chinese;
+    font-size: 30px;
+    text-align: center;
+}
+.box{
+    position: absolute;
+    width: 150px;
+    height: 150px;
+}
+.red{
+    background-color: red;
+    left:50px;
+    top: 50px;
+    z-index: 1;
+}
+.blue{
+    background-color: blue;
+    left:100px;
+    top: 100px;
+    z-index: 2;
+}
+.green{
+    background-color:green  ;
+    left:150px;
+    top: 150px;
+    z-index: 3;
+}
+.container{
+    position: relative;
+    width: 400px;
+    height: 400px;
+    margin: auto;
+    border: 2px solid black;
+}
+.black, .moved, .green, .light-blue{
+    width: 200px;
+    height: 200px;
+}
+.moved{
+    transform: translate(90px,50px) ;
+    background: lightcoral;
+}
+.black{
+    background: black;
+}
+.light-blue{
+    transform: rotate(45deg);
+    margin: auto;
+    font-family: Myfonts;
+    color: black;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    border-top: 10px solid grey;
+    background-color: lightblue;
+}
+
+.light-blue>p{
+    transform: rotate(315deg);
+}
+.div5>.header1, .scaled, .skew, .skew-1{
+    color: black;
+    background: lightgoldenrodyellow;
+    font-size: 20px;
+    font-weight: bolder;
+    font-family: Myfonts;
+    width: 200px;
+    height: 200px;
+    margin: auto;
+    border: none;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}   
+.scaled{
+    transform: scaleX(.5);
+    transform: scaleY(.5);
+}
+.skew{
+    transform: skew(20deg, 20deg);
+}
+.skew-1{
+    transform: skew(20deg, -20deg);
+}
+.commondiv{
+    width: 200px;
+    height: 200px;
+    background: rgb(8, 255, 243);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Myfonts;
+    font-weight: bolder;
+    font-size: larger;
+    margin: auto;
+    
+}
+.div6:hover{
+    transform: translate(-9px, -7px);
+    transition: 2s;
+    box-shadow: 20px 20px 40px rgb(9, 12, 209);
+    cursor: pointer;
+}
+.div7{
+    transform: rotateZ(90deg);
+}
+.without-transition:hover{
+    width: 400px;
+}
+.with-transition{
+    width: 200px;
+    height: 200px;
+    background: rgb(8, 255, 243);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Myfonts;
+    font-weight: bolder;
+    font-size: larger;
+    margin: auto;
+    transition: width 2s linear .5s, background-color 2.5s ease-in .5s ;
+}
+.with-transition:hover{
+    background-color: black;
+    width: 400px;
+
+}
+.keyframes{
+    width: 200px;
+    height: 200px;
+    border-radius: 100%;
+    background-color: bisque;
+    animation-name: MyAnimation;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    position: relative;
+}
+@keyframes MyAnimation{
+    from{
+        background-color:blue;
+    }
+    to{
+       background-color:brown;
+    }   
+}
+.keyframes-2{
+    width: 200px;
+    height: 200px;
+    border-radius: 100%;
+    background-color: rgb(119, 40, 102);
+    animation-name: MyAnimation2;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    animation-duration: 10s;
+    animation-delay: 1s;
+    animation-direction: reverse;
+    position: relative;
+
+}
+@keyframes MyAnimation2{
+    0%{
+        background-color: red;
+    }
+    20%{
+        background-color: green;
+    }
+    50%{
+        width: 400px;
+        background-color: orange;
+
+    }
+    80%{
+        left: 200px;
+    }
+    100%{
+        background-color: peru;
+    }
+}
